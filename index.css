@@ -1,0 +1,10 @@
+﻿body {
+    background-color: black;
+}
+
+.body {
+    color: white;
+    height: 50%;
+    width:100%;
+    background-color : darkred;
+}
