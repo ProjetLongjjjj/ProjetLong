@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Vitrine</title>
+        <link rel="stylesheet" href="vitrine.css" />
+    </head>     
+    <body>
+        <div class="header">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="accueil.html">Accueil</a>
+                <a href="vitrine.html">Vitrine</a>
+                <a href="creations.html">Mes créations</a>
+                <a href="ajouter.html">Ajouter</a>
+
+                <a href="profil.html">
+                    <img id="pfp" src="PICTURES/profil.png" />
+                    <p>Mon profil</p>
+                </a>
+                <a href="index.html">Se déconnecter</a>
+            </div>
+            <span style="font-size:70px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+            <a id="language" href="vitrineen.html">
+                <h1>EN/FR</h1>
+            </a>
+        </div>
+        <div class="title">
+            <h1>Vitrine</h1>
+        </div>
+        <div class="content">
+            <div class="filters">
+                <form>
+                    <input id="inputtext" size="45" type="text" placeholder="Chercher par NOM Prénom/pseudo">
+                </form>
+                <form>
+                    <input id="inputtext" size="45" type="text" placeholder="Chercher par médium">
+                </form>
+                <form>
+                    <input id="inputtext" size="45" type="text" placeholder="Chercher par date d'expo">
+                </form>
+            </div>
+            <div class="vitrine">
+                <img id="placeholder" src="PICTURES/placeholder.png" />
+                <img id="placeholder" src="PICTURES/placeholder.png" />
+                <img id="placeholder" src="PICTURES/placeholder.png" />
+                <img id="placeholder" src="PICTURES/placeholder.png" />
+                <img id="placeholder" src="PICTURES/placeholder.png" />
+                <img id="placeholder" src="PICTURES/placeholder.png" />
+                <img id="placeholder" src="PICTURES/placeholder.png" />
+                <img id="placeholder" src="PICTURES/placeholder.png" />
+                <img id="placeholder" src="PICTURES/placeholder.png" />
+            </div>
+        </div>
+        <div class="footer">
+            <img id="smallerlogo" src="PICTURES/smallerlogo.png" />
+        </div>
+
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+    </body>
+</html>
