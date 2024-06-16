@@ -1,0 +1,137 @@
+﻿@font-face {
+    font-family: 'Verstyle';
+    src: local('verstylebold.otf') 
+         url('verstylebold.otf') format('opentype');
+}
+
+html {
+
+}
+
+body {
+    font-family: 'Verstyle';
+    background-color: white;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content : space-between;
+    height:auto;
+}
+
+#menuicon {
+    width:7%;
+    height:7%;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+
+}
+
+#pfp {
+    width:56%;
+    margin-top:80%;
+}
+
+#language {
+    font-size:25px;
+}
+
+.title {
+    text-align: center;
+    font-size:50px;
+}
+
+.vitrine, .nomoeuvre, .nomauteur, .pseudo, .formeoeuvre, .filiere, .medium, .commentaires, .localisation, .consent {
+    border: solid;
+    border-color: black;
+    text-align: left;
+    width: auto;
+    margin: auto;
+    margin-bottom:1%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-content: center;
+}
+
+.vitrine, .formeoeuvre {
+    display:flex;
+}
+
+#placeholder {
+    width: 100%;
+    margin: 1%;
+    height: 400px;
+}
+
+.nomoeuvre, .nomauteur, .pseudo, .filiere, .medium, .commentaires, .localisation, .consent {
+    display:block;
+}
+
+#inputtext {
+    width: 100%;
+    height : 200px;
+    resize : none;
+}
+
+#buttonformeoeuvre {
+    border-radius: 0;
+    background-color: white;
+    border: 1rem solid;
+    border-color: rgba(220, 0, 0, 1);
+    width: 33%;
+    height: auto;
+    font-size: 275%;
+    padding: 1%;
+    margin-right: 20px;
+}
+
+#finformulaire {
+    text-align:right;
+    justify-content:right;
+}
+
+.footer {
+    margin-top:10%;
+    text-align: right;
+    margin-right:2%;
+}
+
+#smallerlogo {
+    width:8%;
+}
