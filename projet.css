@@ -116,6 +116,18 @@ body {
 .vitrine {
     border: solid;
     border-color: black;
+   /* text-align: center;
+    width: auto;
+    margin: auto;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;*/
+}
+
+.photos {
     text-align: center;
     width: auto;
     margin: auto;
@@ -128,7 +140,7 @@ body {
 }
 
 #placeholder {
-    width: 80%;
+    width: 32%;
     margin: 1%;
     height: auto;
 }

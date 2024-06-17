@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Project</title>
+    <link rel="stylesheet" href="projet.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>     
+    <body>
+        <div class="header">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a id="sidenavlink" href="accueilen.html">Accueil</a>
+                <a id="sidenavlink" href="vitrineen.html">Vitrine</a>
+                <a id="sidenavlink" href="creationsen.html">Mes créations</a>
+                <a id="sidenavlink" href="ajouteren.html">Ajouter</a>
+                <a href="profilen.html">
+                    <img id="pfp" src="PICTURES/profil.png" />
+                </a>
+                <a href="indexen.html">
+                    <img id="deconnexion" src="PICTURES/off.png" />
+                </a>
+            </div>
+            <span style="font-size:70px;cursor:pointer; position:fixed;top:-5px;" onclick="openNav()">&#9776;</span>
+
+            <a id="language" href="projet.html" style="position:fixed; left:91%;<!--top:-20px;-->">
+                <h1 id="languagetext">EN/FR</h1>
+            </a>
+        </div>
+        <div class="title">
+            <h1>Project info</h1>
+        </div>
+        <div class="content">
+            <div class="vitrine">
+                <div class="photos">
+                    <img id="placeholder" src="PICTURES/placeholder.png" />
+                    <img id="placeholder" src="PICTURES/placeholder.png" />
+                    <img id="placeholder" src="PICTURES/placeholder.png" />
+                </div>
+                <div class="texte" style="margin-left:2%; margin-right:2%;margin-bottom:2%;">
+                    <div class="artcontent">
+                        <h1 style="color: rgb(185, 32, 32)">NAME OF THE ARTWORK</h1>
+                        <div class="artcontentheader" style="display: flex; flex-direction: row; justify-content: space-between; align-content: center;">
+                            <p>Name and First Name of the author / Pseudonym</p>
+                            <p style="color: rgb(185, 32, 32)">Class and sector of the author</p>
+                        </div>
+                    </div>
+                    <div class="artdescription">
+                        <p>Nature of the artwork</p>
+                        <div class="description" style="border: solid; border-color: white; padding:2%;">
+                            <h1>Artwork description</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                                Technique/médium:
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+                                Temps de réalisation: 00H00
+                            </p>
+                        </div>
+                        <p>Techniques used</p>
+                        <p>Loaction of creation of the artwork</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <img id="smallerlogo" src="PICTURES/smallerlogo.png" />
+        </div>
+
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+    </body >
+</html >
