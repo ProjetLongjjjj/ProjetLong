@@ -21,10 +21,10 @@
                     <img id="deconnexion" src="PICTURES/off.png" />
                 </a>
             </div>
-            <span style="font-size:70px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <span style="font-size:70px;cursor:pointer; position:fixed;top:-5px;" onclick="openNav()">&#9776;</span>
 
-            <a id="language" href="tropheesen.html">
-                <h1>EN/FR</h1>
+            <a id="language" href="tropheesen.html" style="position:fixed; left:91%;<!--top:-20px;-->">
+                <h1 id="languagetext">EN/FR</h1>
             </a>
         </div>
         <div class="title">
@@ -32,21 +32,515 @@
         </div>
         <div class="content">
             <div class="vitrine">
-                <img id="placeholder" src="PICTURES/ACHIEVEMENTS/ceramique.webp" />
-                <img id="placeholder" src="PICTURES/ACHIEVEMENTS/peinture.webp" />
-                <img id="placeholder" src="PICTURES/ACHIEVEMENTS/bois.webp" />
-                <img id="placeholder" src="PICTURES/ACHIEVEMENTS/serigraphie.webp" />
-                <img id="placeholder" src="PICTURES/ACHIEVEMENTS/son.webp" />
-                <img id="placeholder" src="PICTURES/ACHIEVEMENTS/photo.webp" />
-                <img id="placeholder" src="PICTURES/ACHIEVEMENTS/textile.webp" />
-                <img id="placeholder" src="PICTURES/ACHIEVEMENTS/impression3D.webp" />
-                <img id="placeholder" src="PICTURES/ACHIEVEMENTS/developpeur.webp" />
-                <img id="placeholder" src="PICTURES/ACHIEVEMENTS/explorateur.webp" />
-                <img id="placeholder" src="PICTURES/ACHIEVEMENTS/socialiseur.webp" />
-                <img id="placeholder" src="PICTURES/ACHIEVEMENTS/quotidien.webp" />
-                <img id="placeholder" src="PICTURES/ACHIEVEMENTS/curieux.webp" />
-                <img id="placeholder" src="PICTURES/ACHIEVEMENTS/apprenti.webp" />
-                <img id="placeholder" src="PICTURES/ACHIEVEMENTS/apprenant.webp" />
+                <button id="achievementbutton" onclick="overlayceramiqueOn()" style="background-color: transparent; outline:none;">
+                    <img id="placeholder" src="PICTURES/ACHIEVEMENTS/ceramique.webp" />
+                </button>
+                <div id="overlayceramique" style="align-content:center;">
+                    <script>
+                        function overlayceramiqueOn() {
+                            document.getElementById("overlayceramique").style.display = "block";
+                        }
+
+                        function overlayceramiqueOff() {
+                            document.getElementById("overlayceramique").style.display = "none";
+                        }
+                    </script>
+                    <div id="overlaytext">
+                        <div id="overlayheader" style="width: 100%; font-size: 35px; display:flex; flex-direction:row; flex-wrap:wrap; align-items:center;">
+                            <img src="PICTURES/return.png" onclick="overlayceramiqueOff()" style="width:10%; height:10%;" />
+                            <h1 style="margin: 10%;">Céramique</h1>
+                        </div>
+                        <div id="overlaycontent">
+                            <div id="achievementimg">
+                                <img style="width:30%;" src="PICTURES/ACHIEVEMENTS/ceramique.webp" />
+                            </div>
+                            <div id="achievementprogress" style="margin:5%;">
+                                <progress id="file" style="margin:0;" max="100" value="10">10%</progress>
+                                <p style="text-align:center; font-size:10px;margin:0;">10%</p>
+                            </div>
+                            <div id="initiationtext" style="border: solid; border-color : grey; background-color:white; border-radius : 20px;">
+                                <h1 style="font-size: 30px; color : black">Tu t'es initié à la céramique !</h1>
+                                <h2 style="font-size: 20px; color: black">Un de tes projets a été réalisé avec de la céramique</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="achievementbutton" onclick="overlaypeintureOn()" style="background-color: transparent; outline:none;">
+                    <img id="placeholder" src="PICTURES/ACHIEVEMENTS/peinture.webp" />
+                </button>
+                <div id="overlaypeinture" style="align-content:center;">
+                    <script>
+                        function overlaypeintureOn() {
+                            document.getElementById("overlaypeinture").style.display = "block";
+                        }
+
+                        function overlaypeintureOff() {
+                            document.getElementById("overlaypeinture").style.display = "none";
+                        }
+                    </script>
+                    <div id="overlaytext">
+                        <div id="overlayheader" style="width: 100%; font-size: 35px; display:flex; flex-direction:row; flex-wrap:wrap; align-items:center;">
+                            <img src="PICTURES/return.png" onclick="overlaypeintureOff()" style="width:10%; height:10%;" />
+                            <h1 style="margin-left: 15%;">Peinture</h1>
+                        </div>
+                        <div id="overlaycontent">
+                            <div id="achievementimg">
+                                <img style="width:30%;" src="PICTURES/ACHIEVEMENTS/peinture.webp" />
+                            </div>
+                            <div id="achievementprogress" style="margin:5%;">
+                                <progress id="file" style="margin:0;" max="100" value="10">33%</progress>
+                                <p style="text-align:center; font-size:10px;margin:0;">33%</p>
+                            </div>
+                            <div id="initiationtext" style="border: solid; border-color : grey; background-color:white; border-radius : 20px;">
+                                <h1 style="font-size: 30px; color : black">Tu t'es initié à la peinture !</h1>
+                                <h2 style="font-size: 20px; color: black">Un de tes projets a été réalisé avec de la peinture</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="achievementbutton" onclick="overlayboisOn()" style="background-color: transparent; outline:none;">
+                    <img id="placeholder" src="PICTURES/ACHIEVEMENTS/bois.webp" />
+                </button>
+                <div id="overlaybois" style="align-content:center;">
+                    <script>
+                        function overlayboisOn() {
+                            document.getElementById("overlaybois").style.display = "block";
+                        }
+
+                        function overlayboisOff() {
+                            document.getElementById("overlaybois").style.display = "none";
+                        }
+                    </script>
+                    <div id="overlaytext">
+                        <div id="overlayheader" style="width: 100%; font-size: 35px; display:flex; flex-direction:row; flex-wrap:wrap; align-items:center;">
+                            <img src="PICTURES/return.png" onclick="overlayboisOff()" style="width:10%; height:10%;" />
+                            <h1 style="margin-left: 25%;">Bois</h1>
+                        </div>
+                        <div id="overlaycontent">
+                            <div id="achievementimg">
+                                <img style="width:30%;" src="PICTURES/ACHIEVEMENTS/bois.webp" />
+                            </div>
+                            <div id="achievementprogress" style="margin:5%;">
+                                <progress id="file" style="margin:0;" max="100" value="10">58%</progress>
+                                <p style="text-align:center; font-size:10px;margin:0;">58%</p>
+                            </div>
+                            <div id="initiationtext" style="border: solid; border-color : grey; background-color:white; border-radius : 20px;">
+                                <h1 style="font-size: 30px; color : black">Tu t'es initié au travail sur bois !</h1>
+                                <h2 style="font-size: 20px; color: black">Un de tes projets a été réalisé avec du bois</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="achievementbutton" onclick="overlayserigraphieOn()" style="background-color: transparent; outline:none;">
+                    <img id="placeholder" src="PICTURES/ACHIEVEMENTS/serigraphie.webp" />
+                </button>
+                <div id="overlayserigraphie" style="align-content:center;">
+                    <script>
+                        function overlayserigraphieOn() {
+                            document.getElementById("overlayserigraphie").style.display = "block";
+                        }
+
+                        function overlayserigraphieOff() {
+                            document.getElementById("overlayserigraphie").style.display = "none";
+                        }
+                    </script>
+                    <div id="overlaytext">
+                        <div id="overlayheader" style="width: 100%; font-size: 35px; display:flex; flex-direction:row; flex-wrap:wrap; align-items:center;">
+                            <img src="PICTURES/return.png" onclick="overlayserigraphieOff()" style="width:10%; height:10%;" />
+                            <h1 style="margin: 10%;">Sérigraphie</h1>
+                        </div>
+                        <div id="overlaycontent">
+                            <div id="achievementimg">
+                                <img style="width:30%;" src="PICTURES/ACHIEVEMENTS/serigraphie.webp" />
+                            </div>
+                            <div id="achievementprogress" style="margin:5%;">
+                                <progress id="file" style="margin:0;" max="100" value="10">58%</progress>
+                                <p style="text-align:center; font-size:10px;margin:0;">58%</p>
+                            </div>
+                            <div id="initiationtext" style="border: solid; border-color : grey; background-color:white; border-radius : 20px;">
+                                <h1 style="font-size: 30px; color : black">Tu t'es initié à la sérigraphie !</h1>
+                                <h2 style="font-size: 20px; color: black">Un de tes projets a été réalisé avec de la sérigraphie</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="achievementbutton" onclick="overlaysonOn()" style="background-color: transparent; outline:none;">
+                    <img id="placeholder" src="PICTURES/ACHIEVEMENTS/son.webp" />
+                </button>
+                <div id="overlayson" style="align-content:center;">
+                    <script>
+                        function overlaysonOn() {
+                            document.getElementById("overlayson").style.display = "block";
+                        }
+
+                        function overlaysonOff() {
+                            document.getElementById("overlayson").style.display = "none";
+                        }
+                    </script>
+                    <div id="overlaytext">
+                        <div id="overlayheader" style="width: 100%; font-size: 35px; display:flex; flex-direction:row; flex-wrap:wrap; align-items:center;">
+                            <img src="PICTURES/return.png" onclick="overlaysonOff()" style="width:10%; height:10%;" />
+                            <h1 style="margin: 10%; font-size:150%;">Création sonore</h1>
+                        </div>
+                        <div id="overlaycontent">
+                            <div id="achievementimg">
+                                <img style="width:30%;" src="PICTURES/ACHIEVEMENTS/son.webp" />
+                            </div>
+                            <div id="achievementprogress" style="margin:5%;">
+                                <progress id="file" style="margin: 0;" max="100" value="10">10%</progress>
+                                <p style="text-align:center; font-size:10px;margin:0;">10%</p>
+                            </div>
+                            <div id="initiationtext" style="border: solid; border-color : grey; background-color:white; border-radius : 20px;">
+                                <h1 style="font-size: 30px; color : black">Tu t'es initié à la création sonore !</h1>
+                                <h2 style="font-size: 20px; color: black">Un de tes projets a été réalisé avec de la création sonore</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="achievementbutton" onclick="overlayphotoOn()" style="background-color: transparent; outline:none;">
+                    <img id="placeholder" src="PICTURES/ACHIEVEMENTS/photo.webp" />
+                </button>
+                <div id="overlayphoto" style="align-content:center;">
+                    <script>
+                        function overlayphotoOn() {
+                            document.getElementById("overlayphoto").style.display = "block";
+                        }
+
+                        function overlayphotoOff() {
+                            document.getElementById("overlayphoto").style.display = "none";
+                        }
+                    </script>
+                    <div id="overlaytext">
+                        <div id="overlayheader" style="width: 100%; font-size: 35px; display:flex; flex-direction:row; flex-wrap:wrap; align-items:center;">
+                            <img src="PICTURES/return.png" onclick="overlayphotoOff()" style="width:10%; height:10%;" />
+                            <h1 style="margin-left: 25%;">Photo</h1>
+                        </div>
+                        <div id="overlaycontent">
+                            <div id="achievementimg">
+                                <img style="width:30%;" src="PICTURES/ACHIEVEMENTS/photo.webp" />
+                            </div>
+                            <div id="achievementprogress" style="margin:5%;">
+                                <progress id="file" style="margin:0;" max="100" value="10">99%</progress>
+                                <p style="text-align:center; font-size:10px;margin:0;">99%</p>
+                            </div>
+                            <div id="initiationtext" style="border: solid; border-color : grey; background-color:white; border-radius : 20px;">
+                                <h1 style="font-size: 30px; color : black">Tu t'es initié à la photo !</h1>
+                                <h2 style="font-size: 20px; color: black">Un de tes projets a été réalisé avec de la photo</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="achievementbutton" onclick="overlaytextileOn()" style="background-color: transparent; outline:none;">
+                    <img id="placeholder" src="PICTURES/ACHIEVEMENTS/textile.webp" />
+                </button>
+                <div id="overlaytextile" style="align-content:center;">
+                    <script>
+                        function overlaytextileOn() {
+                            document.getElementById("overlaytextile").style.display = "block";
+                        }
+
+                        function overlaytextileOff() {
+                            document.getElementById("overlaytextile").style.display = "none";
+                        }
+                    </script>
+                    <div id="overlaytext">
+                        <div id="overlayheader" style="width: 100%; font-size: 35px; display:flex; flex-direction:row; flex-wrap:wrap; align-items:center;">
+                            <img src="PICTURES/return.png" onclick="overlaytextileOff()" style="width:10%; height:10%;" />
+                            <h1 style="margin-left: 22%;">Textile</h1>
+                        </div>
+                        <div id="overlaycontent">
+                            <div id="achievementimg">
+                                <img style="width:30%;" src="PICTURES/ACHIEVEMENTS/textile.webp" />
+                            </div>
+                            <div id="achievementprogress" style="margin:5%;">
+                                <progress id="file" style="margin:0;" max="100" value="10">88%</progress>
+                                <p style="text-align:center; font-size:10px;margin:0;">88%</p>
+                            </div>
+                            <div id="initiationtext" style="border: solid; border-color : grey; background-color:white; border-radius : 20px;">
+                                <h1 style="font-size: 30px; color : black">Tu t'es initié au textile !</h1>
+                                <h2 style="font-size: 20px; color: black">Un de tes projets a été réalisé avec du textile</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="achievementbutton" onclick="overlayimpression3DOn()" style="background-color: transparent; outline:none;">
+                    <img id="placeholder" src="PICTURES/ACHIEVEMENTS/impression3D.webp" />
+                </button>
+                <div id="overlayimpression3D" style="align-content:center;">
+                    <script>
+                        function overlayimpression3DOn() {
+                            document.getElementById("overlayimpression3D").style.display = "block";
+                        }
+
+                        function overlayimpression3DOff() {
+                            document.getElementById("overlayimpression3D").style.display = "none";
+                        }
+                    </script>
+                    <div id="overlaytext">
+                        <div id="overlayheader" style="width: 100%; font-size: 35px; display:flex; flex-direction:row; flex-wrap:wrap; align-items:center;">
+                            <img src="PICTURES/return.png" onclick="overlayimpression3DOff()" style="width:10%; height:10%;" />
+                            <h1 style="margin: 10%; font-size: 150%;">Impression 3D</h1>
+                        </div>
+                        <div id="overlaycontent">
+                            <div id="achievementimg">
+                                <img style="width:30%;" src="PICTURES/ACHIEVEMENTS/impression3D.webp" />
+                            </div>
+                            <div id="achievementprogress" style="margin:5%;">
+                                <progress id="file" style="margin:0;" max="100" value="10">56%</progress>
+                                <p style="text-align:center; font-size:10px;margin:0;">56%</p>
+                            </div>
+                            <div id="initiationtext" style="border: solid; border-color : grey; background-color:white; border-radius : 20px;">
+                                <h1 style="font-size: 30px; color : black">Tu t'es initié à l'impression 3D !</h1>
+                                <h2 style="font-size: 20px; color: black">Un de tes projets a été réalisé avec de l'impression 3D</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="achievementbutton" onclick="overlaydeveloppeurOn()" style="background-color: transparent; outline:none;">
+                    <img id="placeholder" src="PICTURES/ACHIEVEMENTS/developpeur.webp" />
+                </button>
+                <div id="overlaydeveloppeur" style="align-content:center;">
+                    <script>
+                        function overlaydeveloppeurOn() {
+                            document.getElementById("overlaydeveloppeur").style.display = "block";
+                        }
+
+                        function overlaydeveloppeurOff() {
+                            document.getElementById("overlaydeveloppeur").style.display = "none";
+                        }
+                    </script>
+                    <div id="overlaytext">
+                        <div id="overlayheader" style="width: 100%; font-size: 35px; display:flex; flex-direction:row; flex-wrap:wrap; align-items:center;">
+                            <img src="PICTURES/return.png" onclick="overlaydeveloppeurOff()" style="width:10%; height:10%;" />
+                            <h1 style="margin: 10%; font-size : 150%">Développement</h1>
+                        </div>
+                        <div id="overlaycontent">
+                            <div id="achievementimg">
+                                <img style="width:30%;" src="PICTURES/ACHIEVEMENTS/developpeur.webp" />
+                            </div>
+                            <div id="achievementprogress" style="margin:5%;">
+                                <progress id="file" style="margin:0;" max="100" value="10">45%</progress>
+                                <p style="text-align:center; font-size:10px;margin:0;">45%</p>
+                            </div>
+                            <div id="initiationtext" style="border: solid; border-color : grey; background-color:white; border-radius : 20px;">
+                                <h1 style="font-size: 30px; color : black">Tu t'es initié au développement numérique !</h1>
+                                <h2 style="font-size: 20px; color: black">Un de tes projets a été réalisé avec du développement numérique</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="achievementbutton" onclick="overlayexplorateurOn()" style="background-color: transparent; outline:none;">
+                    <img id="placeholder" src="PICTURES/ACHIEVEMENTS/explorateur.webp" />
+                </button>
+                <div id="overlayexplorateur" style="align-content:center;">
+                    <script>
+                        function overlayexplorateurOn() {
+                            document.getElementById("overlayexplorateur").style.display = "block";
+                        }
+
+                        function overlayexplorateurOff() {
+                            document.getElementById("overlayexplorateur").style.display = "none";
+                        }
+                    </script>
+                    <div id="overlaytext">
+                        <div id="overlayheader" style="width: 100%; font-size: 35px; display:flex; flex-direction:row; flex-wrap:wrap; align-items:center;">
+                            <img src="PICTURES/return.png" onclick="overlayexplorateurOff()" style="width:10%; height:10%;" />
+                            <h1 style="margin: 10%;">Explorateur</h1>
+                        </div>
+                        <div id="overlaycontent">
+                            <div id="achievementimg">
+                                <img style="width:30%;" src="PICTURES/ACHIEVEMENTS/explorateur.webp" />
+                            </div>
+                            <div id="achievementprogress" style="margin:5%;">
+                                <progress id="file" style="margin:0;" max="100" value="10">22%</progress>
+                                <p style="text-align:center; font-size:10px;margin:0;">22%</p>
+                            </div>
+                            <div id="initiationtext" style="border: solid; border-color : grey; background-color:white; border-radius : 20px;">
+                                <h1 style="font-size: 30px; color : black">Tu t'es initié à des nouvelles techniques !</h1>
+                                <h2 style="font-size: 20px; color: black">Tu a essayé 3 nouvelles techniques de création depuis ton inscription</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="achievementbutton" onclick="overlaysocialiseurOn()" style="background-color: transparent; outline:none;">
+                    <img id="placeholder" src="PICTURES/ACHIEVEMENTS/socialiseur.webp" />
+                </button>
+                <div id="overlaysocialiseur" style="align-content:center;">
+                    <script>
+                        function overlaysocialiseurOn() {
+                            document.getElementById("overlaysocialiseur").style.display = "block";
+                        }
+
+                        function overlaysocialiseurOff() {
+                            document.getElementById("overlaysocialiseur").style.display = "none";
+                        }
+                    </script>
+                    <div id="overlaytext">
+                        <div id="overlayheader" style="width: 100%; font-size: 35px; display:flex; flex-direction:row; flex-wrap:wrap; align-items:center;">
+                            <img src="PICTURES/return.png" onclick="overlaysocialiseurOff()" style="width:10%; height:10%;" />
+                            <h1 style="margin: 10%;">Socialiseur</h1>
+                        </div>
+                        <div id="overlaycontent">
+                            <div id="achievementimg">
+                                <img style="width:30%;" src="PICTURES/ACHIEVEMENTS/socialiseur.webp" />
+                            </div>
+                            <div id="achievementprogress" style="margin:5%;">
+                                <progress id="file" style="margin:0;" max="100" value="10">66%</progress>
+                                <p style="text-align:center; font-size:10px;margin:0;">66%</p>
+                            </div>
+                            <div id="initiationtext" style="border: solid; border-color : grey; background-color:white; border-radius : 20px;">
+                                <h1 style="font-size: 30px; color : black">Tu as communiqué avec de nouvelles personnes !</h1>
+                                <h2 style="font-size: 20px; color: black">Tu as communiqué avec trois étudiants depuis ton inscription</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="achievementbutton" onclick="overlayquotidienOn()" style="background-color: transparent; outline:none;">
+                    <img id="placeholder" src="PICTURES/ACHIEVEMENTS/quotidien.webp" />
+                </button>
+                <div id="overlayquotidien" style="align-content:center;">
+                    <script>
+                        function overlayquotidienOn() {
+                            document.getElementById("overlayquotidien").style.display = "block";
+                        }
+
+                        function overlayquotidienOff() {
+                            document.getElementById("overlayquotidien").style.display = "none";
+                        }
+                    </script>
+                    <div id="overlaytext">
+                        <div id="overlayheader" style="width: 100%; font-size: 35px; display:flex; flex-direction:row; flex-wrap:wrap; align-items:center;">
+                            <img src="PICTURES/return.png" onclick="overlayquotidienOff()" style="width:10%; height:10%;" />
+                            <h1 style="margin: 10%;">Quotidien</h1>
+                        </div>
+                        <div id="overlaycontent">
+                            <div id="achievementimg">
+                                <img style="width:30%;" src="PICTURES/ACHIEVEMENTS/quotidien.webp" />
+                            </div>
+                            <div id="achievementprogress" style="margin:5%;">
+                                <progress id="file" style="margin:0;" max="100" value="10">11%</progress>
+                                <p style="text-align:center; font-size:10px;margin:0;">11%</p>
+                            </div>
+                            <div id="initiationtext" style="border: solid; border-color : grey; background-color:white; border-radius : 20px;">
+                                <h1 style="font-size: 30px; color : black">Tu es un utilisateur fidèle !</h1>
+                                <h2 style="font-size: 20px; color: black">Tu reviens de façon quotidenne sur la plateforme</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="achievementbutton" onclick="overlaycurieuxOn()" style="background-color: transparent; outline:none;">
+                    <img id="placeholder" src="PICTURES/ACHIEVEMENTS/curieux.webp" />
+                </button>
+                <div id="overlaycurieux" style="align-content:center;">
+                    <script>
+                        function overlaycurieuxOn() {
+                            document.getElementById("overlaycurieux").style.display = "block";
+                        }
+
+                        function overlaycurieuxOff() {
+                            document.getElementById("overlaycurieux").style.display = "none";
+                        }
+                    </script>
+                    <div id="overlaytext">
+                        <div id="overlayheader" style="width: 100%; font-size: 35px; display:flex; flex-direction:row; flex-wrap:wrap; align-items:center;">
+                            <img src="PICTURES/return.png" onclick="overlaycurieuxOff()" style="width:10%; height:10%;" />
+                            <h1 style="margin-left: 20%;">Curieux</h1>
+                        </div>
+                        <div id="overlaycontent">
+                            <div id="achievementimg">
+                                <img style="width:30%;" src="PICTURES/ACHIEVEMENTS/curieux.webp" />
+                            </div>
+                            <div id="achievementprogress" style="margin:5%;">
+                                <progress id="file" style="margin:0;" max="100" value="10">38%</progress>
+                                <p style="text-align:center; font-size:10px;margin:0;">38%</p>
+                            </div>
+                            <div id="initiationtext" style="border: solid; border-color : grey; background-color:white; border-radius : 20px;">
+                                <h1 style="font-size: 30px; color : black">Tu es un élève curieux !</h1>
+                                <h2 style="font-size: 20px; color: black">Tu as consulté beaucoup d'oeuvres de tes camardes depuis ton inscription</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="achievementbutton" onclick="overlayapprentiOn()" style="background-color: transparent; outline:none;">
+                    <img id="placeholder" src="PICTURES/ACHIEVEMENTS/apprenti.webp" />
+                </button>
+                <div id="overlayapprenti" style="align-content:center;">
+                    <script>
+                        function overlayapprentiOn() {
+                            document.getElementById("overlayapprenti").style.display = "block";
+                        }
+
+                        function overlayapprentiOff() {
+                            document.getElementById("overlayapprenti").style.display = "none";
+                        }
+                    </script>
+                    <div id="overlaytext">
+                        <div id="overlayheader" style="width: 100%; font-size: 35px; display:flex; flex-direction:row; flex-wrap:wrap; align-items:center;">
+                            <img src="PICTURES/return.png" onclick="overlayapprentiOff()" style="width:10%; height:10%;" />
+                            <h1 style="margin-left: 20%;">Apprenti</h1>
+                        </div>
+                        <div id="overlaycontent">
+                            <div id="achievementimg">
+                                <img style="width:30%;" src="PICTURES/ACHIEVEMENTS/apprenti.webp" />
+                            </div>
+                            <div id="achievementprogress" style="margin:5%;">
+                                <progress id="file" style="margin:0;" max="100" value="10">54%</progress>
+                                <p style="text-align:center; font-size:10px;margin:0;">54%</p>
+                            </div>
+                            <div id="initiationtext" style="border: solid; border-color : grey; background-color:white; border-radius : 20px;">
+                                <h1 style="font-size: 30px; color : black">Tu es un élève qui suit les conseils des autres !</h1>
+                                <h2 style="font-size: 20px; color: black">Tu as reçu des conseils d'un élève apprenant</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="achievementbutton" onclick="overlayapprenantOn()" style="background-color: transparent; outline:none;">
+                    <img id="placeholder" src="PICTURES/ACHIEVEMENTS/apprenant.webp" />
+                </button>
+                <div id="overlayapprenant" style="align-content:center;">
+                    <script>
+                        function overlayapprenantOn() {
+                            document.getElementById("overlayapprenant").style.display = "block";
+                        }
+
+                        function overlayapprenantOff() {
+                            document.getElementById("overlayapprenant").style.display = "none";
+                        }
+                    </script>
+                    <div id="overlaytext">
+                        <div id="overlayheader" style="width: 100%; font-size: 35px; display:flex; flex-direction:row; flex-wrap:wrap; align-items:center;">
+                            <img src="PICTURES/return.png" onclick="overlayapprenantOff()" style="width:10%; height:10%;" />
+                            <h1 style="margin: 10%;">Apprenant</h1>
+                        </div>
+                        <div id="overlaycontent">
+                            <div id="achievementimg">
+                                <img style="width:30%;" src="PICTURES/ACHIEVEMENTS/apprenant.webp" />
+                            </div>
+                            <div id="achievementprogress" style="margin:5%;">
+                                <progress id="file" style="margin:0;" max="100" value="10">29%</progress>
+                                <p style="text-align:center; font-size:10px;margin:0;">29%</p>
+                            </div>
+                            <div id="initiationtext" style="border: solid; border-color : grey; background-color:white; border-radius : 20px;">
+                                <h1 style="font-size: 30px; color : black">Tu es un élève qui aide les autres !</h1>
+                                <h2 style="font-size: 20px; color: black">Tu as aidé un de tes camarades en lui donnant des conseils</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="footer">
