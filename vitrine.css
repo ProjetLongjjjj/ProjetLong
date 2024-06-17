@@ -10,7 +10,12 @@ html {
 
 body {
     font-family: 'Verstyle';
-    background-color: white;
+    background-color: rgb(226, 200, 173);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("PICTURES/BACKGROUNDS/bois.svg");
+    background-size: cover;
+    background-position: center center;
 }
 
 .header {
@@ -32,17 +37,17 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: rgb(185, 64, 64);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 8px 8px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #f1f1f1;
     display: block;
     transition: 0.3s;
 }
@@ -54,20 +59,50 @@ body {
 .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
-    font-size: 36px;
+    right: 0;
+    margin-top:-10px;
+    font-size: 50px;
     margin-left: 50px;
+}
 
+#sidenavlink, #sidenavlinkchosen {
+    text-align: center;
+    border: solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom-color: white;
+}
+
+#sidenavlinktop {
+    text-align: center;
+    border: solid;
+    border-left: 0px;
+    border-right: 0px;
+    border-top-color: white;
+    border-bottom-color: white;
+}
+
+#sidenavlinkchosen {
+    background-color: rgb(228, 17, 69);
 }
 
 #pfp {
     width: 56%;
-    margin-top: 80%;
+    margin-left: 50px;
+    margin-right:50px;
+    margin-top: 90%;
+    margin-bottom: 10%;
 }
 
+#deconnexion {
+    width: 15%;
+    margin-left: 41%;
+    margin-right:41%;
+}
 
 #language {
-    font-size:25px;
+    font-size: 25px;
 }
 
 .title {
@@ -90,7 +125,6 @@ body {
     margin: auto;
     height: 50%;
     padding: 20px;
-/*    display: flex;*/
     flex-direction: row;
     justify-content: center;
     align-content:center;

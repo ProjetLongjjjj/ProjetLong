@@ -10,16 +10,16 @@
         <div class="header">
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="accueil.html">Accueil</a>
-                <a href="vitrine.html">Vitrine</a>
-                <a href="creations.html">Mes créations</a>
-                <a href="ajouter.html">Ajouter</a>
-
+                <a id="sidenavlink" href="accueil.html">Accueil</a>
+                <a id="sidenavlink" href="vitrine.html">Vitrine</a>
+                <a id="sidenavlink" href="creations.html">Mes créations</a>
+                <a id="sidenavlinkchosen" href="ajouter.html">Ajouter</a>
                 <a href="profil.html">
                     <img id="pfp" src="PICTURES/profil.png" />
-                    <p>Mon profil</p>
                 </a>
-                <a href="index.html">Se déconnecter</a>
+                <a href="index.html">
+                    <img id="deconnexion" src="PICTURES/off.png" />
+                </a>
             </div>
             <span style="font-size:70px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
@@ -37,18 +37,14 @@
             <div class="nomoeuvre">
                 <p id="formulairetitres">Nom de l'oeuvre</p>
                 <textarea id="inputtext"></textarea>
-                <input type="submit" value='Envoyer' />
             </div>
             <div class="nomauteur">
                 <p>Prénom et nom de l'auteur</p>
                 <textarea id="inputtext"></textarea>
-                <!--<button>Envoyer</button>-->
-                <input type="submit" value='Envoyer'/>
             </div>
             <div class="pseudo">
                 <p>Pseudonyme (facultatif)</p>
                 <textarea id="inputtext"></textarea>
-                <input type="submit" value='Envoyer' />
             </div>
             <div class="formeoeuvre">
                 <button id="buttonformeoeuvre">Physique</button>
@@ -81,20 +77,33 @@
                     <option>Master Food</option>
                     <option>Studio France</option>
                 </select>
-                <input type="submit" value='Envoyer' />
             </div>
             <div class="medium">
                 <p>Techniques et médium utilisés</p>
                 <select id="mediumdropdown">
                     <option>--Choisissez technique/medium utilisé--</option>
-
+                    <option>Bois</option>
+                    <option>Mousse</option>
+                    <option>Peinture</option>
+                    <option>Plastique</option>
+                    <option>Résine</option>
+                    <option>Métal</option>
+                    <option>Céramique</option>
+                    <option>Textile</option>
+                    <option>Sérigraphie</option>
+                    <option>Fond vert</option>
+                    <option>Prise de vue</option>
+                    <option>Unity</option>
+                    <option>Unreal</option>
+                    <option>Blender</option>
+                    <option>Arduino</option>
+                    <option>Augmented Reality</option>
+                    <option>Son</option>
                 </select>
-                <input type="submit" value='Envoyer' />
             </div>
             <div class="commentaires">
                 <p>Détails de l'oeuvre</p>
                 <textarea id="inputtext"></textarea>
-                <input type="submit" value='Envoyer' />
             </div>
             <div class="localisation">
                 <p>Lieu de création de l'oeuvre</p>
@@ -110,12 +119,10 @@
                     <option>Atelier Son</option>
                     <option>Domicile</option>
                 </select>
-                <input type="submit" value='Envoyer' />
             </div>
             <div class="consent">
                 <input type="checkbox" id="consent">
                 <label for="consent">Je consent à ce que mon image soit utilisée par l'Ecole de Design Nantes Atlantique sur cette plateforme.</label>
-                <!--<p>Je consent à ce que mon image soit utilisée par l'Ecole de Design Nantes Atlantique sur cette plateforme.</p>-->
             </div>
             <input id="finformulaire" type="submit" value='Envoyer' />
         </div>
@@ -131,12 +138,6 @@
             function closeNav() {
                 document.getElementById("mySidenav").style.width = "0";
             }
-        </script>
-
-        <script language="php">
-            <?php
-            echo 'Hello World';
-            ?>
         </script>
     </body >
 </html >
